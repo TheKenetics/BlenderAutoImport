@@ -47,6 +47,9 @@ BLENDER_COMMAND=/home/ken/AppsFast/Blender/3.1.0/blender
 In `blender_auto_import_script.py`  
 Change IMPORT_DELAY_SECS to whatever
 
+## Change Blank.blend file
+Just overwrite it.
+
 
 ## TODO
 Finish QA Tool  
