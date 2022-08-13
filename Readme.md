@@ -20,37 +20,41 @@ Supported formats:
 
 ## Installing
 ### Windows
-Change default program for supported formats to `blender_auto_import.bat`
-### Linux
-Change default program for supported formats to `blender_auto_import.sh`
+Create an environment variable called BLENDER pointing to your favorite Blender.exe  
+Change default program for supported formats to `blender_auto_import.bat`  
+
+### Mac
+Create an environment variable for Blender  
+Add something similar to your `~/.bash_profile`  
+```
+export BLENDER="open -b org.blenderfoundation.blender --args"
+```
+Change default program for supported formats to `blender_auto_import.sh`  
+
+### Linux  
+Create an environment variable for Blender  
+Add something similar to your `~/.bashrc` or `~/.bash_profile`  
+```
+export BLENDER="/home/ken/AppsFast/Blender/3.1.0/blender"
+```
+Change default program for supported formats to `blender_auto_import.sh`  
 
 ## Using
-Double click a 3D file in your OS's file browser and Blender will load an empty file and import the file.
-If you don't see model show up, wait a few seconds. The script has to delay the import or else Blender will crash.
+Double click a 3D file in your OS's file browser and Blender will load an empty file and import the file.  
+If you don't see model show up, wait a few seconds. The script has to delay the import or else Blender will crash.  
 
 ## How To
-### Change Blender Version
-In `blender_auto_import.bat` or `blender_auto_import.sh`  
-On the line that sets `BLENDER_COMMAND`, set it to the path to executable for Blender.  
-Do not have spaces next to the =  
-For .bat it should look like:  
-```
-set BLENDER_COMMAND=F:\Apps\Blender\3.1.0\blender.exe
-```
-
-And for .sh it should look like:  
-```
-BLENDER_COMMAND=/home/ken/AppsFast/Blender/3.1.0/blender
-```
+### Change Blender Version  
+Change the BLENDER environment variable  
 
 ### Change the Import Delay
 In `blender_auto_import_script.py`  
-Change IMPORT_DELAY_SECS to whatever
+Change IMPORT_DELAY_SECS to whatever  
 
-### Change Blank.blend file
-Just overwrite it.
+### Change Blank.blend file  
+Just overwrite it.  
 
 
-## TODO
+## TODO  
 Finish QA Tool  
 
